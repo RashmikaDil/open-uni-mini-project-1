@@ -209,7 +209,7 @@ public class Main {
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.contains("date=" + date)) {
-                    String[] parts = line.split(", ");
+                    String[] parts = line.split(",");
                     String studentId = parts[0].split("=")[1];
                     String name = parts[1].split("=")[1];
                     String attendStatus = parts[3].split("=")[1];
